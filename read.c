@@ -6,7 +6,7 @@
 /*   By: jplevy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/03 09:50:49 by jplevy            #+#    #+#             */
-/*   Updated: 2016/03/03 12:14:57 by jplevy           ###   ########.fr       */
+/*   Updated: 2016/03/03 14:21:32 by jplevy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ int			ft_create_tet(t_coord *tet)
 		tmp[cpt].x -= mx;
 		tmp[cpt].y -= my;
 	}
-	return ((ft_max_tet(tmp).x + ft_max_tet(tmp).y > 3) ? -1 : 0);
+	return (((ft_max_tet(tmp).x + ft_max_tet(tmp).y > 3) || \
+				(ft_test_tet(tmp) == -1)) ? -1 : 0);
 }
 
 int			ft_fill_tet(t_coord **tet, char *str)

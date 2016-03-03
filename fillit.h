@@ -6,7 +6,7 @@
 /*   By: jplevy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/03 09:31:48 by jplevy            #+#    #+#             */
-/*   Updated: 2016/03/03 09:40:07 by jplevy           ###   ########.fr       */
+/*   Updated: 2016/03/03 14:38:19 by jplevy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,6 @@ void				ft_print_square(int size);
 void				ft_putchar(char c);
 void				ft_memdel(void *mem);
 void				ft_erase_tet(char id, int size);
+int					ft_test_tet(t_coord *tet);
+int					ft_get_nb_touch(t_coord *lst, t_coord i, int c);
 #endif

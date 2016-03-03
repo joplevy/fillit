@@ -1,6 +1,6 @@
 NAME = fillit
 
-SRC = main.c read.c globals.c resolution.c ft_tools.c
+SRC = main.c read.c globals.c resolution.c ft_tools.c test_tet.c
 
 OBJ = $(SRC:.c=.o)
 
